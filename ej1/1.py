@@ -1,3 +1,3 @@
 class Alumno(object):
     nombre=" "
-    apellido=" "
+    apellido="
