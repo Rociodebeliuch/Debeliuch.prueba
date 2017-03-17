@@ -32,10 +32,11 @@ class Alumno(object):
         return sum(self.Lista)/len(self.Lista)
 
     def PromedioAlumnos (self):
+        self.aux=0
         for Contador in self.ListaMaterias:
-            aux=self.ListaMaterias[Contador].setPromedioMat()+aux
+            self.aux=self.ListaMaterias[Contador].setPromedioMat()+self.aux
 
-        return aux/len(self.ListaMaterias)
+        return self.aux/len(self.ListaMaterias)
 
     def MenorProm (self):
         for Contador in self.ListaMaterias:
