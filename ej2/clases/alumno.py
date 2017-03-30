@@ -12,7 +12,7 @@ class Alumno(object):
 
     def setNombre(self,n):
         self.nombre=str(n)
-
+ 
     def setApellido(self,a):
         self.apellido=str(a)
 
