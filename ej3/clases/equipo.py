@@ -1,8 +1,21 @@
 class Equipo(object):
-    nombre=""
+    nombreq=""
     capitan=None
-    lista_Jug=[]
+    lista_Jug=[10]
     barrio=None
 
-    def setAgregarJugador(self,lista_Jug):
-        self.
+    def setAgregarNombreE(self,nomb):
+        self.nombreq=str(nomb)
+
+    def setAgregarJugador(self,nombre):
+        self.lista_Jug.append(nombre)
+
+    def setAgregarBarrio(self,nomb):
+        self.barrio=str(nomb)
+
+    def setAgregarCapitan(self,capitan):
+        if capitan in self.lista_Jug:
+            self.capitan = capitan
+            return True
+
+        return False
