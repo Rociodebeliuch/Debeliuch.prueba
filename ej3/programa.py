@@ -39,6 +39,8 @@ equipo.setAgregarCapitan(jugador2)
 
 torneo.setAgregarEquipo(equipo)
 
+print(jugador3.nombre)
+print(equipo.capitan.nombre)
 
 
 

@@ -3,6 +3,13 @@ class Equipo(object):
     capitan=None
     lista_Jug=[10]
     barrio=None
+    listadisp=[]
+
+    def __init__(self):
+        self.listadisp=[]
+        self.listadisp=[[False,False,False],[False,False,False],[False,False,False],[False,False,False],[False,False,False],[False,False,False]]
+
+
 
     def setAgregarNombreE(self,nomb):
         self.nombreq=str(nomb)
@@ -19,3 +26,11 @@ class Equipo(object):
             return True
 
         return False
+
+    def AgregarDisponibilidad(self,dia,turno):
+        self.listadisp [dia][turno]=True
+
+
+
+
+
