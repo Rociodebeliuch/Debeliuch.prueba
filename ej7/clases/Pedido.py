@@ -3,3 +3,5 @@ class Pedido(object):
     HoraEntrega=None
     Plato=None
     Se_entrega=None
+
+def set
