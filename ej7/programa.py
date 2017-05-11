@@ -4,6 +4,11 @@ from Persona import Persona
 from Plato import Plato
 from Profesor import Profesor
 listaP=[]
+def main()
+
+
+
+
 
 
 
@@ -24,6 +29,7 @@ def Agregarprofesor(n,a):
 def Modificaralumno(i):
     for item in listaP:
         if item.dni==i:
+
 
 
 
