@@ -4,6 +4,7 @@ class Pedido(object):
     Plato=None
     Se_entrega=False
     persona=None
+    id_pedido=None
 
 
 
@@ -21,3 +22,6 @@ class Pedido(object):
 
     def setPersona(self,p):
         self.persona=p
+
+    def setid(self,idd):
+        self.id_pedido=idd
