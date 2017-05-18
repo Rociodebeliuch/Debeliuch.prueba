@@ -13,17 +13,18 @@ def main():
     print("1-Agregar Persona")
     print("2-Modificar Persona")
     print("3-Eliminar Persona")
-    print("7-Agregar Pedido")
-    print("8-Modificar Pedido")
-    print("Eliminar Pedido")
-    print("4-Agregar Plato")
-    print("5-Modificar Plato")
-    print("6-Eliminar Plato")
+    print("4-Agregar Pedido")
+    print("5-Modificar Pedido")
+    print("6-Eliminar Pedido")
+    print("7-Agregar Plato")
+    print("8-Modificar Plato")
+    print("9-Eliminar Plato")
     nombre = None
     apellido = None
     division = None
     descuento = None
     dni = None
+    fecha=None
     print("ingrese opcion")
     opcion=input()
     opcion2=input()
@@ -38,42 +39,43 @@ def main():
             dni = input()
             Agregaralumno(nombre, apellido, division, dni)
 
-            elif opcion2==2:
-                nombre=input()
-                apellido=input()
-                descuento=input()
-                dni=input()
-                Agregarprofesor(nombre,apellido,dni,descuento)
+        elif opcion2==2:
+              nombre=input()
+             apellido=input()
+             descuento=input()
+             dni=input()
+             Agregarprofesor(nombre,apellido,dni,descuento)
 
     elif opcion==2:
         print("1-Modificar Alumno")
         print("2-Modificar Profesor")
 
-        opcion3=input()
+        if opcion2==3:
+            Modificaralumno(nombre,apellido,dni,division)
 
-                if opcion3==1:
+         elif opcion2== 4:
+            nombre=input()
+             apellido=input()
+             dni=input()
+            descuento=input()
+            Modificarprofesor(nombre,apellido,dni,descuento)
 
-                Modificaralumno(nombre, apellido, dni, division)
+    elif opcion==3:
+        print("1-Eliminar Alumno")
+        print("2-Eliminar Profesor")
+        dni = input()
+        if opcion2==5:
+            Eliminaralumno(dni)
 
-                elif opcion3== 2:
+        elif opcion2==6:
+            Eliminarprofesor(dni)
 
+    elif opcion==4:
 
-                    nombre=input()
-                    apellido=input()
-                    dni=input()
-                    descuento=input()
-                    Modificarprofesor(nombre,apellido,dni,descuento)
+        Agregarpedido(fecha,hora,plato,entrega,persona,idd)
 
-            elif opcion==3:
-                print("1-Eliminar Alumno")
-                print("2-Eliminar Profesor")
-                opcion4=input()
-                dni = input()
-                 if opcion4==1:
-                     Eliminaralumno(dni)
-                    elif opcion4==2:
-                        Eliminarprofesor(dni)
-
+    elif opcion==5:
+    elif
 
 
 
