@@ -1,3 +1,4 @@
+from .Tripulantes import Tripulacion
 class Servicio(Tripulacion):
     idiomas=[]
 

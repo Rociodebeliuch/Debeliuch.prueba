@@ -1,10 +1,10 @@
 class Aviones(object):
-    modelo=None
+    codigo=None
     cant_pasaj=None
     cant_trip=None
 
-    def setAgregarModelo(self,m):
-        self.modelo=m
+    def setcod(self,m):
+        self.codigo=m
 
     def setAgregarCantP(self,p):
         self.cant_pasaj=p

@@ -1,3 +1,4 @@
+from .Personas import Personas
 class Tripulacion(Personas):
     modelos_avion=[]
 

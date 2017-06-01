@@ -16,3 +16,5 @@ class Personas(object):
     def setAgregarDni(self,d):
         self.dni=d
 
+
+
